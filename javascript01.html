@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motor Honda</title>
+  <style>
+    #namaKendaraan {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="namaMotor"></h1>
+  <button id="onderdilKlakson" onclick="onderdilKlakson()"></button>
+  <p id="bunyiKlakson">.......</p>
+
+  <button id='kecepatan' onclick="kecepatan()"></button>
+  <p id='nambah'>Kecepatan 20km</p>
+
+  <script>
+    document.getElementById('namaMotor').innerHTML = 'Honda';
+
+    // =====================================
+
+    document.getElementById('onderdilKlakson').innerHTML = 'Klakson';
+
+    // Deklarasi Function
+    function onderdilKlakson() {
+      // Isi Function
+      document.getElementById('bunyiKlakson').innerHTML = 'tin tin tin';
+    }
+
+    // =====================================
+
+    document.getElementById('kecepatan').innerHTML = 'Gas';
+
+    function kecepatan() {
+      document.getElementById('nambah').innerHTML = 'Kecepatan 80km';
+    }
+  </script>
+</body>
+
+</html>
